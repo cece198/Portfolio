@@ -1,20 +1,24 @@
 body{
-    background-color:white;
+    background-color:#efefef;
 }
 
 .navbar{
-    margin-bottom:0;
-    background-color:rgb(207, 207, 207);
-    color:black;
+    background-color:#efefef;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 .navbar a{
-    color:black;
+    color:#23303d;
+    float:right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 .navbar a:hover{
-    color: rgb(100, 98, 98);
-}
-.navbar a:active{
-    color:rgb(100, 98, 98);
+    color:#efefef;
+    background: #395159;
 }
 
 .nav-link{
@@ -22,13 +26,32 @@ body{
 }
 
 .jumbotron{
+    margin-top:20px;
     margin-bottom:0;
-    color:white;
-    background-color:rgb(160, 159, 159);
+    color:#efefef;
+    background-color:#23303d;
 }
+
 .Cecelia img{
-    width:160px;
-    height:170px;
+    width:190px;
+    height:200px;
     margin-right:20px;
     margin-left:60px;
+    border-radius: 50%;
 }
+
+.display-4{
+    font-weight: bold;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
